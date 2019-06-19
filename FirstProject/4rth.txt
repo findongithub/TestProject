@@ -1,0 +1,33 @@
+class Demo
+{ 
+    void show(int n) 
+    { 
+        for (int i=0; i<n; i++) 
+        {
+
+           // inner loop for spaces
+            for (int j=n-i; j>1; j--) 
+            { 
+                // printing spaces 
+                System.out.print(" "); 
+               } 
+   
+            // Inner loop for number of column
+             for (int j=0; j<=i; j++ ) 
+               { 
+                // printing stars 
+                System.out.print("* "); 
+               } 
+   
+            // New Line after each row 
+            System.out.println(); 
+        } 
+    } 
+  
+     public static void main(String arr[]) 
+    { 
+        int n = 5; 
+       Demo ob=new Demo();
+       ob.show(n);
+    } 
+} 

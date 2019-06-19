@@ -1,0 +1,29 @@
+class Demo
+{ 
+    void show(int n) 
+    { 
+        int i, j, num=1; 
+        for(i=0; i<n; i++) 
+        {  
+            num = 1; 
+            for(j=0; j<=i; j++) 
+            { 
+                // Here print num with a space 
+                System.out.print(num+ " "); 
+                  
+                // num increment by one
+                num = num + 1; 
+            } 
+  
+            //For new row 
+            System.out.println(); 
+        } 
+    } 
+  
+     public static void main(String arr[]) 
+    { 
+        int n = 5; 
+       Demo ob=new Demo();
+       ob.show(n);
+    } 
+} 
